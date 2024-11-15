@@ -185,8 +185,8 @@ class Cli {
           parseInt(answers.year),
           parseInt(answers.weight),
           parseInt(answers.topSpeed),
-          parseInt(answers.towingCapacity),
-          []
+          [],
+          parseInt(answers.towingCapacity)
         );
         this.vehicles.push(truck);
 
@@ -234,26 +234,26 @@ class Cli {
           name: 'topSpeed',
           message: 'Enter Top Speed',
         },
-        {
-          type: 'input',
-          name: 'frontWheelDiameter',
-          message: 'Enter Front Wheel Diameter',
-        },
-        {
-          type: 'input',
-          name: 'frontWheelBrand',
-          message: 'Enter Front Wheel Brand',
-        },
-        {
-          type: 'input',
-          name: 'rearWheelDiameter',
-          message: 'Enter Rear Wheel Diameter',
-        },
-        {
-          type: 'input',
-          name: 'rearWheelBrand',
-          message: 'Enter Rear Wheel Brand',
-        },
+        // {
+        //   type: 'input',
+        //   name: 'frontWheelDiameter',
+        //   message: 'Enter Front Wheel Diameter',
+        // },
+        // {
+        //   type: 'input',
+        //   name: 'frontWheelBrand',
+        //   message: 'Enter Front Wheel Brand',
+        // },
+        // {
+        //   type: 'input',
+        //   name: 'rearWheelDiameter',
+        //   message: 'Enter Rear Wheel Diameter',
+        // },
+        // {
+        //   type: 'input',
+        //   name: 'rearWheelBrand',
+        //   message: 'Enter Rear Wheel Brand',
+        // },
       ])
       .then((answers) => {
         const motorbike = new Motorbike(
@@ -264,8 +264,10 @@ class Cli {
           parseInt(answers.year),
           parseInt(answers.weight),
           parseInt(answers.topSpeed),
-          new Wheel(parseInt(answers.frontWheelDiameter), answers.frontWheelBrand),
-          new Wheel(parseInt(answers.rearWheelDiameter), answers.rearWheelBrand)
+          [
+            // new Wheel(parseInt(answers.frontWheelDiameter), answers.frontWheelBrand),
+            // new Wheel(parseInt(answers.rearWheelDiameter), answers.rearWheelBrand),
+          ]
         );
         this.vehicles.push(motorbike);
 
