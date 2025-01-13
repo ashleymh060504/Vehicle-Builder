@@ -11,7 +11,8 @@
 
   ## Installation
 
-  1. Open the appliocation in your code editor, such as VS Code. 2. In the terminal, type the command "npm i" in order to install the dependencies for the application.
+  1. Open the appliocation in your code editor, such as VS Code. 
+  2. In the terminal, type the command "npm i" in order to install the dependencies for the application.
 
   ## Usage
 
